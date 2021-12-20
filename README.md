@@ -15,10 +15,10 @@ If you use parts of this work, or otherwise take inspiration from it, please con
 
 ## Requirements:
 - Developed using PyTorch 1.10.0 on Linux x64 machine
-- Condensed package requirements are in `/requirements.txt`. Note that this contains the package versions at the time of publishing, if you update to, for example, a newer version of PyTorch you will need to watch out for changes in class/function calls
+- Condensed package requirements are in `\requirements.txt`. Note that this contains the package versions at the time of publishing, if you update to, for example, a newer version of PyTorch you will need to watch out for changes in class/function calls
 
 ## Data:
-- Download data from [this Google Drive link](https://drive.google.com/drive/folders/1M6W6meoNdi7XfTaJYILsLrm1bEv5i9qv?usp=sharing) and unpack into the `/data` folder
+- Download data from [this Google Drive link](https://drive.google.com/drive/folders/1M6W6meoNdi7XfTaJYILsLrm1bEv5i9qv?usp=sharing) and unpack into the `\data` folder
 - Each folder corresponds to a scene [`castle`, `eagle`, `elephant`, `frog`, `ganesha`, `gourd`, `rocks`, `thinker`] and contains four files. 
     - `model.pt` is the frozen, trained MLP corresponding to the scene
     - `frame_bundle.npz` is the recorded bundle data (images, depth, and poses)
@@ -48,10 +48,10 @@ HNDR
   └── train.sh  // example script to run training
 ```
 ## Reconstruction:
-The jupyter notebook `1_reconstruction.ipynb` contains an interactive tutorial for depth reconstruction: loading a model, loading a bundle, generating depth.
+The jupyter notebook `\1_reconstruction.ipynb` contains an interactive tutorial for depth reconstruction: loading a model, loading a bundle, generating depth.
 
 ## Training:
-The script `train.sh` demonstrates a basic call of `train.py` to train a model on the `gourd` scene data. It contains the arguments
+The script `\train.sh` demonstrates a basic call of `\train.py` to train a model on the `gourd` scene data. It contains the arguments
 - `checkpoint_path` - path to save model and tensorboard checkpoints
 - `device` - device for training [cpu, cuda]
 - `bundle_path` - path to the bundle data
