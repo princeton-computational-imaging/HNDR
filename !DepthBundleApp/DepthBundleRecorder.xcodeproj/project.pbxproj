@@ -1,0 +1,380 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E4DF0B0824CF1A1D0024833B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4DF0B0724CF1A1D0024833B /* Assets.xcassets */; };
+		E4DF0B1B24CF1A810024833B /* MetalViewSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DF0B1224CF1A7F0024833B /* MetalViewSample.swift */; };
+		E4DF0B1C24CF1A810024833B /* MetalTextureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DF0B1324CF1A7F0024833B /* MetalTextureView.swift */; };
+		E4DF0B1D24CF1A810024833B /* MetalTextureViewDepth.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DF0B1424CF1A7F0024833B /* MetalTextureViewDepth.swift */; };
+		E4DF0B1E24CF1A810024833B /* ARReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DF0B1524CF1A800024833B /* ARReceiver.swift */; };
+		E4DF0B1F24CF1A810024833B /* MetalTextureViewConfidence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DF0B1624CF1A800024833B /* MetalTextureViewConfidence.swift */; };
+		E4DF0B2024CF1A810024833B /* PointCloudDepthSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DF0B1724CF1A800024833B /* PointCloudDepthSample.swift */; };
+		E4DF0B2124CF1A810024833B /* ARDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DF0B1824CF1A800024833B /* ARDataProvider.swift */; };
+		E4DF0B2224CF1A810024833B /* shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = E4DF0B1924CF1A800024833B /* shaders.metal */; };
+		E4DF0B2324CF1A810024833B /* MetalPointCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DF0B1A24CF1A810024833B /* MetalPointCloud.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		762CB549210F49954E02A215 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
+		9F60FDDEE7A7673198CD3F7A /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		E4DF0AFE24CF1A1A0024833B /* DepthBundleRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DepthBundleRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4DF0B0724CF1A1D0024833B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E4DF0B0C24CF1A1D0024833B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4DF0B1224CF1A7F0024833B /* MetalViewSample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalViewSample.swift; sourceTree = "<group>"; };
+		E4DF0B1324CF1A7F0024833B /* MetalTextureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalTextureView.swift; sourceTree = "<group>"; };
+		E4DF0B1424CF1A7F0024833B /* MetalTextureViewDepth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalTextureViewDepth.swift; sourceTree = "<group>"; };
+		E4DF0B1524CF1A800024833B /* ARReceiver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARReceiver.swift; sourceTree = "<group>"; };
+		E4DF0B1624CF1A800024833B /* MetalTextureViewConfidence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalTextureViewConfidence.swift; sourceTree = "<group>"; };
+		E4DF0B1724CF1A800024833B /* PointCloudDepthSample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointCloudDepthSample.swift; sourceTree = "<group>"; };
+		E4DF0B1824CF1A800024833B /* ARDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARDataProvider.swift; sourceTree = "<group>"; };
+		E4DF0B1924CF1A800024833B /* shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = shaders.metal; sourceTree = "<group>"; };
+		E4DF0B1A24CF1A810024833B /* MetalPointCloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalPointCloud.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4DF0AFB24CF1A1A0024833B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		327985EB5368B1486905D62D /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				9F60FDDEE7A7673198CD3F7A /* LICENSE.txt */,
+			);
+			path = LICENSE;
+			sourceTree = "<group>";
+		};
+		5EFDC8C637DAF513A104E75C /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				762CB549210F49954E02A215 /* SampleCode.xcconfig */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		E4DF0AF524CF1A1A0024833B = {
+			isa = PBXGroup;
+			children = (
+				E4DF0B0024CF1A1A0024833B /* DepthBundleRecorder */,
+				E4DF0AFF24CF1A1A0024833B /* Products */,
+				5EFDC8C637DAF513A104E75C /* Configuration */,
+				327985EB5368B1486905D62D /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		E4DF0AFF24CF1A1A0024833B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4DF0AFE24CF1A1A0024833B /* DepthBundleRecorder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4DF0B0024CF1A1A0024833B /* DepthBundleRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				E4DF0B1824CF1A800024833B /* ARDataProvider.swift */,
+				E4DF0B1724CF1A800024833B /* PointCloudDepthSample.swift */,
+				E4DF0B1524CF1A800024833B /* ARReceiver.swift */,
+				E4DF0B1A24CF1A810024833B /* MetalPointCloud.swift */,
+				E4DF0B1324CF1A7F0024833B /* MetalTextureView.swift */,
+				E4DF0B1624CF1A800024833B /* MetalTextureViewConfidence.swift */,
+				E4DF0B1424CF1A7F0024833B /* MetalTextureViewDepth.swift */,
+				E4DF0B1224CF1A7F0024833B /* MetalViewSample.swift */,
+				E4DF0B1924CF1A800024833B /* shaders.metal */,
+				E4DF0B0724CF1A1D0024833B /* Assets.xcassets */,
+				E4DF0B0C24CF1A1D0024833B /* Info.plist */,
+			);
+			path = DepthBundleRecorder;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4DF0AFD24CF1A1A0024833B /* DepthBundleRecorder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4DF0B0F24CF1A1D0024833B /* Build configuration list for PBXNativeTarget "DepthBundleRecorder" */;
+			buildPhases = (
+				E4DF0AFA24CF1A1A0024833B /* Sources */,
+				E4DF0AFB24CF1A1A0024833B /* Frameworks */,
+				E4DF0AFC24CF1A1A0024833B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DepthBundleRecorder;
+			productName = pointCloudSample;
+			productReference = E4DF0AFE24CF1A1A0024833B /* DepthBundleRecorder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4DF0AF624CF1A1A0024833B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					E4DF0AFD24CF1A1A0024833B = {
+						CreatedOnToolsVersion = 12.0;
+						LastSwiftMigration = 1200;
+					};
+				};
+			};
+			buildConfigurationList = E4DF0AF924CF1A1A0024833B /* Build configuration list for PBXProject "DepthBundleRecorder" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E4DF0AF524CF1A1A0024833B;
+			productRefGroup = E4DF0AFF24CF1A1A0024833B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E4DF0AFD24CF1A1A0024833B /* DepthBundleRecorder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E4DF0AFC24CF1A1A0024833B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4DF0B0824CF1A1D0024833B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4DF0AFA24CF1A1A0024833B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4DF0B2224CF1A810024833B /* shaders.metal in Sources */,
+				E4DF0B1D24CF1A810024833B /* MetalTextureViewDepth.swift in Sources */,
+				E4DF0B1C24CF1A810024833B /* MetalTextureView.swift in Sources */,
+				E4DF0B2324CF1A810024833B /* MetalPointCloud.swift in Sources */,
+				E4DF0B1F24CF1A810024833B /* MetalTextureViewConfidence.swift in Sources */,
+				E4DF0B1B24CF1A810024833B /* MetalViewSample.swift in Sources */,
+				E4DF0B2124CF1A810024833B /* ARDataProvider.swift in Sources */,
+				E4DF0B1E24CF1A810024833B /* ARReceiver.swift in Sources */,
+				E4DF0B2024CF1A810024833B /* PointCloudDepthSample.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E4DF0B0D24CF1A1D0024833B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 762CB549210F49954E02A215 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.8;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E4DF0B0E24CF1A1D0024833B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 762CB549210F49954E02A215 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.8;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E4DF0B1024CF1A1D0024833B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 762CB549210F49954E02A215 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = DepthBundleRecorder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.depthBundleRecorder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E4DF0B1124CF1A1D0024833B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 762CB549210F49954E02A215 /* SampleCode.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = DepthBundleRecorder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.depthBundleRecorder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4DF0AF924CF1A1A0024833B /* Build configuration list for PBXProject "DepthBundleRecorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4DF0B0D24CF1A1D0024833B /* Debug */,
+				E4DF0B0E24CF1A1D0024833B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4DF0B0F24CF1A1D0024833B /* Build configuration list for PBXNativeTarget "DepthBundleRecorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4DF0B1024CF1A1D0024833B /* Debug */,
+				E4DF0B1124CF1A1D0024833B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4DF0AF624CF1A1A0024833B /* Project object */;
+}
