@@ -1,3 +1,5 @@
+# iOS App for Depth Bundle Recording
+
 This is part of the official code repository for the work: [The Implicit Values of A Good Hand Shake: Handheld Multi-Frame Neural Depth Refinement
 ](https://arxiv.org/abs/2111.13738).
 
@@ -10,8 +12,6 @@ If you use parts of this work, or otherwise take inspiration from it, please con
   year={2021}
 }
 ```
-
-# iOS App for Depth Bundle Recording
 
 Our app for recording depth bundles is based on [this code for displaying a point cloud using scene depth]( https://developer.apple.com/documentation/arkit/environmental_analysis/displaying_a_point_cloud_using_scene_depth), and we highly recommend you read through that page if you want to familiarize yourself with the structure and function of its code.
 
