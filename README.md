@@ -19,9 +19,10 @@ If you use parts of this work, or otherwise take inspiration from it, please con
 
 ## Data:
 - Download data from [this Google Drive link](https://drive.google.com/drive/folders/1M6W6meoNdi7XfTaJYILsLrm1bEv5i9qv?usp=sharing) and unpack into the `\data` folder
-- Each folder corresponds to a scene [`castle`, `eagle`, `elephant`, `frog`, `ganesha`, `gourd`, `rocks`, `thinker`] and contains four files. 
+- Each folder corresponds to a scene [`castle`, `double`, `eagle`, `elephant`, `embrace`, `frog`, `ganesha`, `gourd`, `rocks`, `thinker`] and contains five files. 
     - `model.pt` is the frozen, trained MLP corresponding to the scene
-    - `frame_bundle.npz` is the recorded bundle data (images, depth, and poses)
+    - `frame_bundle.npz` is the recorded bundle of data (images, depth, and poses)
+    - `pose_bundle.npz` is a *much* smaller recorded bundle of data (poses only)
     - `reprojected_lidar.npy` is the merged LiDAR depth baseline as described in the paper
     - `snapshot.mp4` is a video of the recorded snapshot for visualization purposes
 
