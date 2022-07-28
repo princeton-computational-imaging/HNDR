@@ -5,11 +5,12 @@ This is the official code repository for the work: [The Implicit Values of A Goo
 
 If you use parts of this work, or otherwise take inspiration from it, please considering citing our paper:
 ```
-@article{chugunov2021implicit,
+@inproceedings{chugunov2022implicit,
   title={The Implicit Values of A Good Hand Shake: Handheld Multi-Frame Neural Depth Refinement},
-  author={Chugunov, Ilya and Zhang, Yuxuan and Xia, Zhihao and Zhang, Cecilia and Chen, Jiawen and Heide, Felix},
-  journal={arXiv preprint arXiv:2111.13738},
-  year={2021}
+  author={Chugunov, Ilya and Zhang, Yuxuan and Xia, Zhihao and Zhang, Xuaner and Chen, Jiawen and Heide, Felix},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={2852--2862},
+  year={2022}
 }
 ```
 
