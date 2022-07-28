@@ -1,7 +1,7 @@
 # Handheld Multi-Frame Neural Depth Refinement
 
 This is the official code repository for the work: [The Implicit Values of A Good Hand Shake: Handheld Multi-Frame Neural Depth Refinement
-](https://light.princeton.edu/publication/hndr/).
+](https://light.princeton.edu/publication/hndr/), presented at CVPR 2022.
 
 If you use parts of this work, or otherwise take inspiration from it, please considering citing our paper:
 ```
