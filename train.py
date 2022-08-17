@@ -151,7 +151,7 @@ if __name__ == '__main__':
     parser.add_argument('--lidar_weight', type=float, default=0.01, help="How much to weight lidar loss")
     parser.add_argument('--patch_size', type=int, default=11, help="What size RGB patch to sample for each ray.")
     parser.add_argument('--median_size', type=int, default=11, help="What size median filter to apply to confidence.")
-    parser.add_argument('--coord_patch_size', type=int, default=192, help="What size of patch to use to generate rays.")
+    parser.add_argument('--coord_patch_size', type=int, default=11, help="What size of patch to use to generate rays.")
     parser.add_argument('--frames', type=int, default=None, nargs='+', help="Which specific frames to train on.")
     args = parser.parse_args()
 

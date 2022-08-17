@@ -119,9 +119,9 @@ def get_initial_conf(img):
 
 def get_random_coords(args):
     """ Grab a patch of coordinates at a random center position """
-    patch_radius = (args.patch_size - 1) // 2
-    y = (args.height - patch_radius * 2) * torch.rand(size=(args.batch_size, args.num_rays)) + patch_radius
-    x = (args.width -  patch_radius * 2) * torch.rand(size=(args.batch_size, args.num_rays)) + patch_radius
+    coord_patch_radius = (args.coord_patch_size - 1) // 2
+    y = (args.height - coord_patch_radius * 2) * torch.rand(size=(args.batch_size, args.num_rays)) + coord_patch_radius
+    x = (args.width -  coord_patch_radius * 2) * torch.rand(size=(args.batch_size, args.num_rays)) + coord_patch_radius
     
     return torch.stack((x,y),axis=1).to(args.device)
                 
