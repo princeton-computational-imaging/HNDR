@@ -34,12 +34,10 @@ Our app for recording depth bundles is based on [this code for displaying a poin
 4. The button will disappear while the data is being captured, and the count at the top of the app will update accordingly.
 
 ## Processing the Recorded Bundles
-1. We recommend you use [ios-deploy](https://github.com/ios-control/ios-deploy) to download recorded bundles from the phone. To do this simply run:  
-```ios-deploy -w /Documents --bundle_id 'com.depthBundleRecorder'```   
-2. To delete the bundles from the phone you can then run:  
-```ios-deploy -X /Documents --bundle_id 'com.depthBundleRecorder'```  
-If you do this, close and restart the app to update the counts at the top.
-3. **Rename the folder containing the binaries to `data_{name_of_your_choice}`.**
+### *New!* Airdrop recorded files.
+![airdrop](!figs/airdrop.png)
+1. To download recorded bundles simply navigate to "On My iPhone" -> "Depth Image Recorder" in the file browser, select the bundles, and use AirDrop to transfer them to your computer.
+3. On your computer, **rename the parent folder containing the binaries to `data_{name_of_your_choice}`.**
 4. To convert the binary bundle files into `.npz` files as described in the main repo, run:  
 ```python ConvertBinaries.py -d data_{name_of_your_choice}```  
 This will create a folder `data_processed_{name_of_your_choice}` with the processed `.npz` files and preview first/last images of the recorded data.
