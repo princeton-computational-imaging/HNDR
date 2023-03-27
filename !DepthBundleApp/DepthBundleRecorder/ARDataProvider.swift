@@ -57,7 +57,7 @@ final class ARProvider: ARDataReceiver, ObservableObject {
     
     // For recording LiDAR bundle
     var recordScene = true
-    var bundleSize : Int = 15
+    var bundleSize : Int = 120
     var frameCount = 99999
     @Published var bundleFolder : URL?
     
@@ -291,7 +291,7 @@ final class ARProvider: ARDataReceiver, ObservableObject {
         dateFormatter.dateFormat = "yyyy-MM-dd_HH-mm-ss"
         let currDateString = dateFormatter.string(from : currDate)
         
-        let DocumentDirectory = URL(fileURLWithPath: NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0])
+        let DocumentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
         let DirPath = DocumentDirectory.appendingPathComponent("bundle-" + currDateString + suffix + "/")
         
         do {
